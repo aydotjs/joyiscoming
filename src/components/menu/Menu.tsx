@@ -16,7 +16,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useDirection } from "@/context/app.context";
 
-const menuData = navigation.header;
+// Add this type definition at the top of the file
+interface MenuItem {
+  id: number;
+  name: string;
+  path: string;
+  hasChildren?: boolean;
+  children?: MenuItem[];
+}
+
+const menuData = navigation.header as MenuItem[];
 
 type Props = {
   textColor?: string;
