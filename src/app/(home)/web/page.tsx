@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import WebAbout from "@/components/about/WebAbout";
 import WebBlog from "@/components/blog/web/WebBlog";
 import ClientSlider from "@/components/clients/ClientSlider";
