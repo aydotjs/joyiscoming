@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "meta_author": "CodeDynasty",
+    "meta_image": "",
+    "meta_description": "CodeDynasty - Learn to code with hands-on courses, or let us build your dream app, website, or mobile solution at budget-friendly prices."
+  },
+  "site_info": {
+    "title": "CodeDynasty",
+    "description": "CodeDynasty is a coding education and digital product development agency. We teach tech and create innovative solutions that transform businesses.",
+    "info": "CodeDynasty is a coding bootcamp and development agency based in Manchester, UK",
+    "base_url": "",
+    "logo": "/assets/imgs/logo/logo.png",
+    "logo_light": "/assets/imgs/logo/logo-light.png",
+    "logo_light_2": "/assets/imgs/logo/logo-light-2.png",
+    "logo_tm_light": "/assets/imgs/logo/logo-tm-light.png",
+    "logo_width": 125,
+    "logo_height": 34,
+    "logo_text": "CodeDynasty"
+  },
+  "footer_info": {
+    "address": {
+      "name": "Manchester, United Kingdom",
+      "link": "https://maps.app.goo.gl/manchester",
+      "iframe_src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76318.91791067857!2d-2.2743227!3d53.4807593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2sManchester%2C%20UK!5e0!3m2!1sen!2suk!4v1705913587617!5m2!1sen!2suk"
+    },
+    "email": "codedynasty001@gmail.com",
+    "mobile": "+44 07804 468345",
+    "open_date": "Mon - Fri",
+    "open_time": "9:00 am - 6:00 pm",
+    "copyright": {
+      "enable": true,
+      "label": "© 2025-26 ",
+      "label_2": "All rights reserved by",
+      "company": "CodeDynasty",
+      "link": "https://codedynasty.com/"
+    },
+    "ctaText": "Let's Build Something Amazing"
+  },
+  "social": [
+    {
+      "name": "Fb",
+      "link": "https://www.facebook.com/codedynasty",
+      "value": "500+"
+    },
+    {
+      "name": "Tw",
+      "link": "https://twitter.com/codedynasty",
+      "value": "500+"
+    },
+    {
+      "name": "In",
+      "link": "https://www.instagram.com/codedynasty",
+      "value": "500+"
+    },
+    {
+      "name": "Li",
+      "link": "https://www.linkedin.com/company/codedynasty",
+      "value": "500+"
+    },
+    {
+      "name": "Gh",
+      "link": "https://github.com/codedynasty",
+      "value": "100+"
+    }
+  ]
+}

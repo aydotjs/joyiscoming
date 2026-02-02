@@ -1,0 +1,290 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "id": 3,
+      "name": "Services",
+      "path": "#",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 1,
+          "name": "IT Training & Academy",
+          "path": "/service/it-training"
+        },
+        {
+          "id": 2,
+          "name": "Web Development",
+          "path": "/service/web-development"
+        },
+        {
+          "id": 3,
+          "name": "Mobile App Development",
+          "path": "/service/mobile-development"
+        },
+        {
+          "id": 4,
+          "name": "Digital Products",
+          "path": "/service/digital-products"
+        },
+        {
+          "id": 5,
+          "name": "All Services",
+          "path": "/service"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Portfolio",
+      "path": "#",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 1,
+          "name": "Our Projects",
+          "path": "/work"
+        },
+        {
+          "id": 2,
+          "name": "Student Projects",
+          "path": "/portfolio/student-work"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Academy",
+      "path": "#",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 1,
+          "name": "Courses",
+          "path": "/academy/courses"
+        },
+        {
+          "id": 2,
+          "name": "Bootcamps",
+          "path": "/academy/bootcamps"
+        },
+        {
+          "id": 3,
+          "name": "Success Stories",
+          "path": "/team"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Blog",
+      "path": "/blog"
+    },
+    {
+      "id": 7,
+      "name": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "footer1": [
+    {
+      "id": 1,
+      "title": "Services",
+      "children": [
+        {
+          "name": "IT Training",
+          "path": "/service/it-training"
+        },
+        {
+          "name": "Web Development",
+          "path": "/service/web-development"
+        },
+        {
+          "name": "Mobile Apps",
+          "path": "/service/mobile-development"
+        },
+        {
+          "name": "Digital Products",
+          "path": "/service/digital-products"
+        },
+        {
+          "name": "Consulting",
+          "path": "/service/consulting"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Company",
+      "children": [
+        {
+          "name": "About Us",
+          "path": "/about"
+        },
+        {
+          "name": "Our Work",
+          "path": "/work"
+        },
+        {
+          "name": "Success Stories",
+          "path": "/team"
+        },
+        {
+          "name": "Career",
+          "path": "/career"
+        },
+        {
+          "name": "Contact Us",
+          "path": "/contact"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Manchester Office",
+      "children": [
+        {
+          "isLocation": true,
+          "name": "Manchester, United Kingdom",
+          "path": "https://maps.app.goo.gl/your-location-link"
+        },
+        {
+          "name": "+44 07804 468345",
+          "path": "tel:+4407804468345"
+        },
+        {
+          "name": "info@codedynasty.com",
+          "path": "mailto:info@codedynasty.com"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Quick Links",
+      "children": [
+        {
+          "name": "Enroll Now",
+          "path": "/academy/courses"
+        },
+        {
+          "name": "Request Quote",
+          "path": "/contact"
+        },
+        {
+          "name": "Student Portal",
+          "path": "/student-portal"
+        }
+      ]
+    }
+  ],
+  "footer2": {
+    "title": "Ready to Build <br> Your Future?",
+    "subtitle": "Whether you want to learn to code or need a digital product built, CodeDynasty is here to help. Let's create something amazing together!",
+    "locationData": [
+      {
+        "id": 1,
+        "city": "Manchester",
+        "address": "Manchester, United Kingdom"
+      }
+    ],
+    "navData": [
+      {
+        "id": 1,
+        "name": "About Us",
+        "path": "/about"
+      },
+      {
+        "id": 2,
+        "name": "Privacy Policy",
+        "path": "/privacy"
+      },
+      {
+        "id": 3,
+        "name": "Career",
+        "path": "/career"
+      },
+      {
+        "id": 4,
+        "name": "Terms of Service",
+        "path": "/terms"
+      }
+    ]
+  },
+  "footer3": [
+    {
+      "id": 1,
+      "title": "Services",
+      "children": [
+        {
+          "name": "IT Training",
+          "path": "/service/it-training"
+        },
+        {
+          "name": "Web Development",
+          "path": "/service/web-development"
+        },
+        {
+          "name": "Mobile Apps",
+          "path": "/service/mobile-development"
+        },
+        {
+          "name": "Digital Products",
+          "path": "/service/digital-products"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Company",
+      "children": [
+        {
+          "name": "Home",
+          "path": "/"
+        },
+        {
+          "name": "About",
+          "path": "/about"
+        },
+        {
+          "name": "Portfolio",
+          "path": "/work"
+        },
+        {
+          "name": "Contact",
+          "path": "/contact"
+        }
+      ]
+    }
+  ],
+  "footer4": [
+    {
+      "id": 1,
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "id": 2,
+      "name": "Career",
+      "path": "/career"
+    },
+    {
+      "id": 3,
+      "name": "Privacy",
+      "path": "/privacy"
+    },
+    {
+      "id": 4,
+      "name": "Terms & Conditions",
+      "path": "/terms"
+    }
+  ]
+}
