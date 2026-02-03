@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  transpilePackages: ['swiper'],
-};
+const nextConfig = {};
+
 export default nextConfig;
