@@ -15,11 +15,12 @@ import WebWork from "@/components/work/web/WebWork";
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
 import BindBtnMoveEffect from "@/components/tools/BindBtnMoveEffect";
 import SeoData from "@/components/tools/SeoData";
+import LayoutWrapper from "./layout-wrapper";
 
 const page = () => {
   const { data: clients } = getMainPage("/brands/brands3.mdx");
-  const { data: about } = getMainPage("/about/web/main.mdx");
-  const { data: feature } = getMainPage("/features/web-features.mdx");
+  const { data: about } = getMainPage("/about/web-about.mdx");
+  const { data: feature } = getMainPage("/features/web-feature.mdx");
   const { data: skill } = getMainPage("/skill/web-skill.mdx");
   const { data: enterprise } = getMainPage("/enterprise/web-enterprise.mdx");
   const works = getAllPages("/works/web");
@@ -33,9 +34,9 @@ const page = () => {
   const { data: testimonial } = getMainPage("/testimonial/web-testimonial.mdx");
   const { data: blog } = getMainPage("/blogs/web/_main.mdx");
   const blogs = getAllPages("/blogs/web");
-
+  
   return (
-    <div>
+    <LayoutWrapper>
       <BindBtnMoveEffect />
       <SeoData
         title="CodeDynasty"
@@ -48,17 +49,9 @@ const page = () => {
       />
       <WebAbout data={{ ...about }} />
       <WebFeature {...feature} />
-      {/* <WebSkill {...skill} /> */}
       <WebEnterPrise {...enterprise} />
-      {/* <WebWork works={works} /> */}
       <WebService {...service} services={services} />
-      {/* <WebImage {...image} /> */}
-      {/* <WebTestimonial {...testimonial} /> */}
-      {/* <WebTeam teamMembers={teamMembers} {...team} /> */}
-      {/* <WebFaq {...faqsData} /> */}
-      {/* <WebContact contactBanner={contactBanner} /> */}
-      {/* <WebBlog blogs={blogs} {...blog} /> */}
-    </div>
+    </LayoutWrapper>
   );
 };
 
