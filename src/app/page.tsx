@@ -19,8 +19,8 @@ import LayoutWrapper from "./layout-wrapper";
 
 const page = () => {
   const { data: clients } = getMainPage("/brands/brands3.mdx");
-  const { data: about } = getMainPage("/about/web-about.mdx");
-  const { data: feature } = getMainPage("/features/web-feature.mdx");
+  const { data: about } = getMainPage("/about/web/main.mdx");
+  const { data: feature } = getMainPage("/features/web-features.mdx");
   const { data: skill } = getMainPage("/skill/web-skill.mdx");
   const { data: enterprise } = getMainPage("/enterprise/web-enterprise.mdx");
   const works = getAllPages("/works/web");
