@@ -67,11 +67,6 @@
       ]
     },
     {
-      "id": 6,
-      "name": "Blog",
-      "path": "/blog"
-    },
-    {
       "id": 7,
       "name": "Contact",
       "path": "/contact"

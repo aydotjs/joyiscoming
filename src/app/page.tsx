@@ -1,5 +1,4 @@
 import WebAbout from "@/components/about/WebAbout";
-import WebBlog from "@/components/blog/web/WebBlog";
 import WebContact from "@/components/contact/WebContact";
 import WebEnterPrise from "@/components/enterprise/web/WebEnterPrise";
 import WebFaq from "@/components/faq/web/WebFaq";
@@ -28,8 +27,6 @@ const page = () => {
   const { data: faqsData } = getMainPage("/faqs/web-faqs.mdx");
   const { data: contactBanner } = getMainPage("/banner/web-contact-banner.mdx");
   const { data: testimonial } = getMainPage("/testimonial/web-testimonial.mdx");
-  const { data: blog } = getMainPage("/blogs/web/_main.mdx");
-  const blogs = getAllPages("/blogs/web");
   
   return (
     <LayoutWrapper>

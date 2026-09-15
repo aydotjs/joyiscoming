@@ -117,9 +117,9 @@ const SideNavModal = () => {
                           >
                             <AccordionTrigger
                               className={clsx(
-                                "text-[30px] sm:text-[36px] lg:text-[6vh] xl:text-[8vh] hover:text-text-fixed-2 md:pl-[58px] !leading-[1]",
+                                "text-[26px] sm:text-[30px] lg:text-[6vh] xl:text-[8vh] hover:text-text-fixed-2 md:pl-[58px] !leading-[1]",
                                 i !== SideMenuData.length - 1 &&
-                                  "mb-8 lg:mb-[26px]"
+                                  "mb-7 lg:mb-[26px]"
                               )}
                             >
                               {menuItem.name}
@@ -153,7 +153,7 @@ const SideNavModal = () => {
                                             <DrawerClose asChild>
                                               <Link
                                                 href={submenuChild.path}
-                                                className="text-[20px] sm:text-[22px] lg:text-[4.58vh] xl:text-[5.36vh] leading-[1.2] hover:text-text-fixed-2 pl-5 mb-5 lg:mb-[26px]"
+                                                className="text-[18px] sm:text-[20px] lg:text-[4.58vh] xl:text-[5.36vh] leading-[1.2] hover:text-text-fixed-2 pl-5 mb-5 lg:mb-[26px]"
                                               >
                                                 {submenuChild.name}
                                               </Link>
@@ -167,7 +167,7 @@ const SideNavModal = () => {
                                   <DrawerClose asChild key={submenu.id}>
                                     <Link
                                       href={submenu.path}
-                                      className="text-[30px] sm:text-[36px] lg:text-[5.3vh] xl:text-[6.2vh] leading-[1] mb-8 lg:mb-[26px] hover:text-text-fixed-2 md:pl-[58px]"
+                                      className="text-[26px] sm:text-[30px] lg:text-[5.3vh] xl:text-[6.2vh] leading-[1] mb-7 lg:mb-[26px] hover:text-text-fixed-2 md:pl-[58px]"
                                     >
                                       {submenu.name}
                                     </Link>
@@ -181,9 +181,9 @@ const SideNavModal = () => {
                             <Link
                               href={menuItem.path}
                               className={clsx(
-                                "block text-[30px] sm:text-[36px] lg:text-[6vh] xl:text-[8vh] hover:text-text-fixed-2 md:pl-[58px] !leading-[1]",
+                                "block text-[26px] sm:text-[30px] lg:text-[6vh] xl:text-[8vh] hover:text-text-fixed-2 md:pl-[58px] !leading-[1]",
                                 i !== SideMenuData.length - 1 &&
-                                  "mb-8 lg:mb-[26px]"
+                                  "mb-7 lg:mb-[26px]"
                               )}
                             >
                               {menuItem.name}
@@ -192,7 +192,7 @@ const SideNavModal = () => {
                         )
                       )}
                     </Accordion>
-                    <div className="mt-8 lg:mt-[26px] md:pl-[58px]">
+                    <div className="mt-7 lg:mt-[26px] md:pl-[58px]">
                       <SignUpSoon variant="row" />
                     </div>
                   </ScrollArea>

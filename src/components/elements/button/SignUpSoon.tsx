@@ -13,8 +13,8 @@ const SignUpSoon = ({
   /** pill: header button. row: full-width line inside the mobile drawer */
   variant?: "pill" | "row";
 }) => {
-  const label = "Sign up";
-  const note = "Coming soon - student sign-up and access to our LMS";
+  const label = "LMS";
+  const note = "Coming soon - our learning platform (LMS)";
   if (variant === "row") {
     return (
       <span
@@ -22,7 +22,7 @@ const SignUpSoon = ({
         aria-disabled="true"
         title={note}
         className={cn(
-          "inline-flex items-center gap-3 text-[30px] sm:text-[36px] leading-[1] text-text-fixed-3/60 cursor-not-allowed select-none",
+          "inline-flex items-center gap-3 text-[26px] sm:text-[30px] leading-[1] text-text-fixed-3/60 cursor-not-allowed select-none",
           className
         )}
       >
