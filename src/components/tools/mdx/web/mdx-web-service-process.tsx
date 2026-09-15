@@ -4,18 +4,24 @@ import ImageComponent from "@/components/tools/ImageComponent";
 
 type Props = {
   title: string;
-  icon: {
+  /** string props for MDX (v6 blockJS strips {{...}} objects); the object form still works */
+  iconLight?: string;
+  iconDark?: string;
+  icon?: {
     dark: string;
     light: string;
   };
   serial_no: string;
-  feature_list: string[];
+  /** comma-separated string in MDX (v6 blockJS strips {[...]} expressions); array still accepted */
+  feature_list: string | string[];
   className?: string;
 };
 
 const WebServiceProcess = ({
   title,
   icon,
+  iconLight,
+  iconDark,
   serial_no,
   feature_list,
   className,
@@ -33,8 +39,8 @@ const WebServiceProcess = ({
       </div>
       <div className="mt-[20px] xl:mt-[40px]">
         <ImageComponent
-          src={icon.light}
-          darkSrc={icon.dark}
+          src={iconLight ?? icon?.light ?? ""}
+          darkSrc={iconDark ?? icon?.dark ?? ""}
           width={52}
           height={60}
           alt="icon"
@@ -43,7 +49,7 @@ const WebServiceProcess = ({
       </div>
       <div className="mt-[30px]">
         <ul>
-          {feature_list.map((item, i) => (
+          {(Array.isArray(feature_list) ? feature_list : String(feature_list).split(",").map((s) => s.trim()).filter(Boolean)).map((item, i) => (
             <li
               key={i}
               className="flex gap-[10px] text-[18px] first:mt-0 mt-[10px]"
