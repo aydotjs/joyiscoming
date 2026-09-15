@@ -21,13 +21,13 @@ const AboutHero = ({ title, sub_title, description }: Props) => {
   );
   return (
     <section ref={containerRef} className="container">
-      <div className="pb-[53px] xl:pb-[83px] 2xl:pb-[133px] pt-[128px] xl:pt-[178px] 2xl:pt-[218px]">
+      <div className="pb-[40px] xl:pb-[60px] pt-[127px] xl:pt-[147px] 2xl:pt-[217px]">
         <InnerSectionTitle
           title={title}
-          className="large md:text-center font-normal"
+          className="max-w-[900px]"
           heading1
         />
-        <div className="grid gap-y-5 gap-x-10 lg:grid-cols-[auto_auto] md:justify-center mt-6 xl:mt-11">
+        <div className="grid gap-y-5 gap-x-10 lg:grid-cols-[auto_auto] mt-6 xl:mt-9">
           <div className="has_fade_anim mt-1" data-fade-from="right">
             <span className="text-[16px] leading-none inline-block uppercase pe-[100px] relative">
               {sub_title}
@@ -35,7 +35,7 @@ const AboutHero = ({ title, sub_title, description }: Props) => {
             </span>
           </div>
           <div>
-            <p className="has_fade_anim max-w-[440px]" data-fade-from="left">
+            <p className="has_fade_anim max-w-[520px] text-[17px] leading-[1.6]" data-fade-from="left">
               {description}
             </p>
           </div>

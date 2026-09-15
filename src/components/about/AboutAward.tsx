@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
@@ -11,8 +10,7 @@ type Props = {
   title: string;
   sub_title: string;
   description: string;
-  images: string[];
-  awards_list: {
+  awards_list?: {
     icon: {
       dark: string;
       light: string;
@@ -26,7 +24,6 @@ const AboutAward = ({
   title,
   sub_title,
   description,
-  images,
   awards_list,
 }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null!);
@@ -56,6 +53,7 @@ const AboutAward = ({
           <p className="has_fade_anim max-w-[630px]" data-fade-from="left">
             {description}
           </p>
+          {awards_list?.length ? (
           <div className="mt-[33px] lg:mt-[43px] has_fade_anim">
             <div className="flex gap-y-5 gap-x-10 max-w-[460px] justify-between">
               {awards_list.map((item, index) => (
@@ -63,23 +61,9 @@ const AboutAward = ({
               ))}
             </div>
           </div>
+          ) : null}
         </div>
 
-        <div className="flex gap-y-5 gap-x-5 md:gap-x-[50px] justify-end mt-[43px] xl:mt-[63px]">
-          <div className="has_fade_anim" data-fade-from="right">
-            <Image src={images[0]} alt="image_1" width={350} height={210} />
-          </div>
-          <div className="max-w-[570px] xl:max-w-[670px] flex-1 basis-auto grow">
-            <Image
-              src={images[1]}
-              alt="image_2"
-              width={330}
-              height={460}
-              className="has_fade_anim"
-              data-fade-from="left"
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
