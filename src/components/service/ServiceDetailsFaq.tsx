@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import { useState, useRef } from "react";
 import {
@@ -33,17 +32,7 @@ const ServiceDetailsFaq = ({ faqs, faqTitle }: Props) => {
   return (
     <div className="container2" ref={containerRef}>
       <div className="section-spacing-top">
-        <div className="grid lg:grid-cols-[420px,460px] xl:grid-cols-[550px,550px] gap-y-10 gap-x-[60px] justify-between items-center">
-          <div className="thumb">
-            <Image
-              src="/assets/imgs/gallery/img-s-87.jpg"
-              alt="faq-img"
-              width={595}
-              height={516}
-              style={{ objectFit: "cover" }}
-              className="has_fade_anim"
-            />
-          </div>
+        <div className="grid gap-y-10 max-w-[760px]">
           <div className="has_fade_anim">
             <SectionTitle
               title={faqTitle}

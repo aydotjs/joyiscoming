@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { TServiceType } from "@/types";
 import { FaFacebookF } from "react-icons/fa6";
@@ -36,16 +35,9 @@ const ServiceDetails = ({ data }: TServiceType) => {
   return (
     <div className="pt-[80px] xl:pt-[100px]">
       <div className="container2" ref={containerRef}>
-        <div className="thumb-main relative">
-          <Image
-            src={data.image}
-            alt="service-details-img"
-            width={1290}
-            height={630}
-            className="w-full"
-          />
-          <div className="bg-background [writing-mode:initial] lg:[writing-mode:vertical-lr] flex gap-[20px] items-center absolute left-[10px] bottom-[10px] px-5 py-2.5 lg:px-2.5 lg:py-5 md:left-[30px] md:bottom-[30px] 2xl:left-[-210px] 2xl:bottom-[-180px]">
-            <p className="pe-[80px] relative inline-block text-[14px] uppercase before:absolute before:bg-border before:w-[60px] before:h-[1px] before:top-1/2 before:left-1/2 before:transform before:md:-translate-x-1/2 before:md:h-[60px] before:md:w-[1px] before:md:bottom-0">
+        <div className="thumb-main">
+          <div className="flex gap-[20px] items-center py-2.5">
+            <p className="pe-[80px] relative inline-block text-[14px] uppercase before:absolute before:bg-border before:w-[60px] before:h-[1px] before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2">
               Follow
             </p>
             <div className="flex gap-[25px]">

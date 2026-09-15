@@ -8,7 +8,7 @@ import { useRef } from "react";
 import ImageComponent from "../../ImageComponent";
 
 type Props = {
-  img: string;
+  img?: string;
   description1: string;
   description2: string;
   className?: string;
@@ -47,24 +47,18 @@ const FeatureContent = ({
         />
       </div>
       <div>
-        <div className="relative has_fade_anim">
-          <Image
-            className="md:rounded-br-[300px] w-full"
-            src={img}
-            alt="content-img"
-            width={960}
-            height={500}
-          />
-          <div className="shape-1 absolute  bottom-[-17px] right-[17px]">
+        {img && (
+          <div className="relative has_fade_anim">
             <Image
-              src="/assets/imgs/shape/img-s-85.png"
-              width={51}
-              height={51}
-              alt="shape-1"
+              className="md:rounded-br-[300px] w-full"
+              src={img}
+              alt="content-img"
+              width={960}
+              height={500}
             />
           </div>
-        </div>
-        <div className="has_fade_anim mt-10 grid lg:grid-cols-2 gap-x-20 gap-y-[30px]">
+        )}
+        <div className="has_fade_anim grid lg:grid-cols-2 gap-x-20 gap-y-[30px]">
           <p className="!m-0 !p-0">{description1}</p>
           <p className="!m-0 !p-0">{description2}</p>
         </div>

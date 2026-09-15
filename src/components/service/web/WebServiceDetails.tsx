@@ -64,18 +64,20 @@ const WebServiceDetails = ({ data }: TServiceType) => {
               </div>
             </div>
           </div>
-          <div
-            className="overflow-hidden has_fade_anim mt-[33px] xl:mt-[53px] 2xl:mt-[63px]"
-            data-fade-offset="0"
-            data-delay="0.45"
-          >
-            <ImageComponent
-              src={image}
-              width={1290}
-              height={630}
-              dataSpeed={0.8}
-            />
-          </div>
+          {image && (
+            <div
+              className="overflow-hidden has_fade_anim mt-[33px] xl:mt-[53px] 2xl:mt-[63px]"
+              data-fade-offset="0"
+              data-delay="0.45"
+            >
+              <ImageComponent
+                src={image}
+                width={1290}
+                height={630}
+                dataSpeed={0.8}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>

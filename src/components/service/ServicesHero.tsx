@@ -3,7 +3,6 @@
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
 import hasTextMovAnim from "@/lib/animation/hasTextMovAnim";
 import { useGSAP } from "@gsap/react";
-import Image from "next/image";
 import { useRef } from "react";
 import ImageComponent from "../tools/ImageComponent";
 import InnerSectionTitle from "../sectionTitle/InnerSectionTitle";
@@ -11,10 +10,9 @@ import InnerSectionTitle from "../sectionTitle/InnerSectionTitle";
 type Props = {
   title: string;
   description: string;
-  image: string;
 };
 
-const ServicesHero = ({ title, description, image }: Props) => {
+const ServicesHero = ({ title, description }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null!);
 
   useGSAP(
@@ -27,7 +25,7 @@ const ServicesHero = ({ title, description, image }: Props) => {
 
   return (
     <section className="container2" ref={containerRef}>
-      <div className="pt-[137px] 2xl:pt-[187px] grid justify-between gap-y-10 gap-x-[60px] md:grid-cols-[1fr_330px] lg:grid-cols-[1fr_430px] xl:grid-cols-[1fr_630px]">
+      <div className="pt-[137px] 2xl:pt-[187px] grid gap-y-10">
         <div>
           <InnerSectionTitle
             title={title}
@@ -49,9 +47,6 @@ const ServicesHero = ({ title, description, image }: Props) => {
               alt="icon"
             />
           </div>
-        </div>
-        <div>
-          <Image src={image} width={630} height={820} alt="service_thumb" />
         </div>
       </div>
     </section>
