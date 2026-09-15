@@ -8,24 +8,7 @@ import { Search } from "lucide-react";
 import { Button } from "../ui/button";
 import GlobalSearch from "../tools/GlobalSearch";
 import Link from "next/link";
-
-const CodeDynastyLogo = () => {
-  return (
-    <Link href="/" className="group">
-      <div className="flex items-center gap-1.5 text-2xl md:text-3xl font-teko uppercase tracking-wide">
-        <span className="text-foreground/60 transition-all group-hover:text-foreground">
-          &lt;
-        </span>
-        <span className="text-foreground transition-all group-hover:tracking-wider">
-          CodeDynasty
-        </span>
-        <span className="text-foreground/60 transition-all group-hover:text-foreground">
-          /&gt;
-        </span>
-      </div>
-    </Link>
-  );
-};
+import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
 
 const WebHeader = () => {
   const { theme } = useTheme();
@@ -44,7 +27,7 @@ const WebHeader = () => {
     <header className="border-b">
       <div className="inner-container large">
         <div className="flex h-[100px] items-center gap-[20px] relative justify-between">
-          <CodeDynastyLogo />
+          <CodeDynastyLogo className="text-[20px] md:text-[24px]" />
           
           <div className="pos-center hidden xl:block">
             <Menu className="text-[22px] [&_button]:text-[22px] [&_a]:text-[22px] [&_svg]:w-4 [&_svg]:h-4 uppercase font-teko" />

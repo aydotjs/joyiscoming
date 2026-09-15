@@ -1,11 +1,9 @@
 "use client";
-import Logo from "@/components/elements/logo/Logo";
+import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
 import SideNavModal from "@/components/sideNavModal/SideNavModal";
 import ButtonSwap from "../elements/button/ButtonSwap";
 import Menu from "../menu/Menu";
 import { cn } from "@/lib/utils";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 type Props = {
   maxWidth?: string;
@@ -13,16 +11,6 @@ type Props = {
 };
 
 const BrandingHeader = ({ maxWidth, onlyDark = false }: Props) => {
-  const { theme } = useTheme();
-  const [isLight, setIsLight] = useState(false);
-
-  useEffect(() => {
-    if (theme === "dark") {
-      setIsLight(true);
-    } else {
-      setIsLight(false);
-    }
-  }, [theme]);
 
   return (
     <>
@@ -30,7 +18,7 @@ const BrandingHeader = ({ maxWidth, onlyDark = false }: Props) => {
         <div className={cn("container", maxWidth)}>
           <div className="flex h-[80px] 2xl:h-[100px] items-center gap-[20px] relative justify-between">
             <div>
-              <Logo light={!onlyDark && isLight} />
+              <CodeDynastyLogo tone={onlyDark ? "onDark" : "auto"} className="text-[20px] md:text-[24px]" />
             </div>
             <div className="pos-center hidden xl:block">
               <Menu

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
 import { useRef } from "react";
 import siteConfig from "@/config/siteConfig.json";
 import EmailInput2 from "@/components/elements/input/EmailInput2";
@@ -96,7 +97,8 @@ const Footer2 = ({ data, TitleclassName }: Props) => {
       <div className="bg-background-3">
         <div className="container2">
           <div className="border-t border-[#ffffff14] flex flex-col xl:flex-row justify-between items-center py-[35px] gap-y-5 gap-x-[60px]">
-            <div className="">
+            <div className="flex flex-col sm:flex-row items-center gap-x-[24px] gap-y-[12px]">
+              <CodeDynastyLogo tone="onDark" className="text-[16px]" />
               <p className="text text-[16px] leading-[1.37] text-text-fixed-3">
                 {copyright.label} | {copyright.label_2}{" "}
                 <a

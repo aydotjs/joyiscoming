@@ -3,6 +3,7 @@
 import siteConfig from "@/config/siteConfig.json";
 import FooterCta from "@/components/footer/FooterCta";
 import Link from "next/link";
+import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
@@ -31,7 +32,8 @@ const Footer4 = ({ footerNav }: Props) => {
       <FooterCta ctaText={footer_info.ctaText} ctaMail={footer_info.email} />
       <div className="inner-container large text-text-fixed-2 font-teko">
         <div className="flex flex-wrap gap gap-y-[10px] gap-x-[60px] justify-between pb-[28px] 2xl:pb-[38px] flex-col md:flex-row items-center">
-          <div>
+          <div className="flex flex-col md:flex-row items-center gap-x-[28px] gap-y-[14px]">
+            <CodeDynastyLogo tone="onDark" className="text-[18px]" />
             <p className="text-text-fixed-2 text-[18px] xl:text-[22px] uppercase leading-none">
               {footer_info.copyright.label}{" "}
               <Link href={footer_info.copyright.link} target="_blank">
