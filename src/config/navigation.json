@@ -18,23 +18,23 @@
       "children": [
         {
           "id": 1,
-          "name": "IT Training & Academy",
-          "path": "/service/it-training"
+          "name": "Cloud & DevOps",
+          "path": "/service/web/cloud-devops"
         },
         {
           "id": 2,
-          "name": "Web Development",
-          "path": "/service/web-development"
+          "name": "Full-Stack Web Development",
+          "path": "/service/web/backend-development"
         },
         {
           "id": 3,
           "name": "Mobile App Development",
-          "path": "/service/mobile-development"
+          "path": "/service/web/product-management"
         },
         {
           "id": 4,
-          "name": "Digital Products",
-          "path": "/service/digital-products"
+          "name": "Web Design",
+          "path": "/service/web/web-design"
         },
         {
           "id": 5,
