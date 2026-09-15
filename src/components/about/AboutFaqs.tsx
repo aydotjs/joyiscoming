@@ -1,39 +1,29 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Image from "next/image";
-import { FaPlay } from "react-icons/fa6";
-import VideoModal from "@/components/tools/VideoModal";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
 import { useGSAP } from "@gsap/react";
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
 import InnerSectionTitle from "../sectionTitle/InnerSectionTitle";
 
 type Props = {
   title: string;
-  image: string;
-  video: string;
   faqs: {
     question: string;
     answer: string;
   }[];
 };
 
-const AboutFaqs = ({ title, image, video, faqs }: Props) => {
+const AboutFaqs = ({ title, faqs }: Props) => {
   const [openItem, setOpenItem] = useState<string>("item-1");
   const containerRef = useRef<HTMLDivElement>(null!);
 
-  const [isOpen, setIsOpen] = useState(false);
 
-  const closeDialog = () => {
-    setIsOpen(!isOpen);
-  };
 
   useGSAP(
     () => {
@@ -46,23 +36,7 @@ const AboutFaqs = ({ title, image, video, faqs }: Props) => {
     <section>
       <div className="inner-container" ref={containerRef}>
         <div className="section-spacing-bottom">
-          <div className="bg-background-3 grid gap-0 lg:grid-cols-[auto_500px] xl:grid-cols-[auto_650px] justify-between">
-            <div className="thumb relative">
-              <Image
-                src={image}
-                alt="image"
-                className="w-full h-full"
-                style={{ objectFit: "cover" }}
-                width={645}
-                height={708}
-              />
-              <Button
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-[100px] h-[100px] bg-background-fixed pos-center"
-              >
-                <FaPlay className="text-text-fixed-2" />
-              </Button>
-            </div>
+          <div className="bg-background-3 grid gap-0">
             <div className="pt-[53px] px-10 pb-[60px] xl:pt-[73px] xl:px-[60px] xl:pb-20 ">
               <InnerSectionTitle title={title} className="text-text-fixed-2" />
 
@@ -97,7 +71,6 @@ const AboutFaqs = ({ title, image, video, faqs }: Props) => {
           </div>
         </div>
       </div>
-      <VideoModal link={video} isOpen={isOpen} close={closeDialog} />
     </section>
   );
 };

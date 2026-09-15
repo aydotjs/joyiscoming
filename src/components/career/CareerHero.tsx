@@ -3,17 +3,15 @@
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
 import { convertWithBrSpanImg } from "@/lib/helper/converter";
 import { useGSAP } from "@gsap/react";
-import Image from "next/image";
 import { useRef } from "react";
 
 type Props = {
   title: string;
   subtitle: string;
   description: string;
-  image: string;
 };
 
-const CareerHero = ({ title, subtitle, description, image }: Props) => {
+const CareerHero = ({ title, subtitle, description }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null!);
 
   useGSAP(
@@ -49,15 +47,6 @@ const CareerHero = ({ title, subtitle, description, image }: Props) => {
             >
               {description}
             </p>
-          </div>
-          <div className="mt-[34px] xl:mt-[44px] 2xl:mt-[64px]">
-            <Image
-              src={image}
-              alt="thumb_image"
-              width={1290}
-              height={600}
-              className="max-w-full"
-            />
           </div>
         </div>
       </div>

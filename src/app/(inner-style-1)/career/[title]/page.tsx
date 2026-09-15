@@ -1,7 +1,6 @@
 import { getAllPages } from "@/lib/helper/contentConverter";
 import { notFound } from "next/navigation";
 import MDXContent from "@/components/tools/MDXContent";
-import Image from "next/image";
 import JobDetailsCard from "@/components/career/JobDetailsCard";
 import JobInfoCard from "@/components/career/JobInfoCard";
 import SeoData from "@/components/tools/SeoData";
@@ -33,7 +32,7 @@ const job = ({ params }: Props) => {
     notFound();
   }
 
-  const { title, bg_image, meta } = job?.data || {};
+  const { title, meta } = job?.data || {};
 
   return (
     <main>
@@ -44,18 +43,8 @@ const job = ({ params }: Props) => {
       />
       <section className="pt-[80px] xl:pt-[100px]">
         <div className="relative z-10">
-          <div className="absolute w-full h-[calc(100%-60px)] xl:h-[calc(100%-100px)] top-0 start-0 -z-10">
-            <Image
-              alt="bg_image"
-              src={bg_image}
-              width={900}
-              height={384}
-              className="w-full h-full"
-              style={{ objectFit: "cover" }}
-            />
-          </div>
           <div className="inner-container">
-            <div className="pt-[120px] xl:pt-[270px]">
+            <div className="pt-[40px] xl:pt-[60px]">
               <JobDetailsCard {...job.data} />
             </div>
           </div>
