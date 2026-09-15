@@ -9,8 +9,6 @@
     "description": "CodeDynasty is a coding bootcamp and development agency in Manchester. We teach people to code and build software for businesses.",
     "info": "CodeDynasty is a coding bootcamp and development agency based in Manchester, UK",
     "base_url": "",
-    "logo": "/assets/imgs/logo/logo.png",
-    "logo_light": "/assets/imgs/logo/logo-light.png",
     "logo_width": 125,
     "logo_height": 34,
     "logo_text": "CodeDynasty"
