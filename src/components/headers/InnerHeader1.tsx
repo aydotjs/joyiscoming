@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
+import SignUpSoon from "@/components/elements/button/SignUpSoon";
 
 type Props = {
   onlyLight?: boolean;
@@ -30,7 +31,7 @@ const InnerHeader1 = ({ onlyLight = false }: Props) => {
         <div className="container">
           <div className="flex h-[80px] 2xl:h-[100px] items-center gap-[20px] relative justify-between">
             <div>
-              <CodeDynastyLogo className="text-[20px] md:text-[24px]" />
+              <CodeDynastyLogo className="text-[26px] md:text-[32px]" />
             </div>
             <div className="pos-center hidden xl:block">
               <Menu
@@ -38,6 +39,9 @@ const InnerHeader1 = ({ onlyLight = false }: Props) => {
               />
             </div>
             <div className="flex items-center gap-[20px]">
+              <div className="hidden md:block">
+                <SignUpSoon className="me-3" />
+              </div>
               <div className="hidden md:block">
                 <ButtonFlip
                   btnText="Get Started"

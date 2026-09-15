@@ -30,7 +30,7 @@ const WebFeature = ({ title, img_icon, description, features }: Props) => {
   );
 
   return (
-    <section className="bg-theme" ref={containerRef}>
+    <section className="bg-theme hidden md:block" ref={containerRef}>
       <div className="inner-container">
         <div className="py-[80px] lg:py-[100px] xl:py-[140px]">
           {/* Centered Header Section */}

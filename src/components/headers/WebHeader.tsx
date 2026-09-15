@@ -9,6 +9,7 @@ import { Button } from "../ui/button";
 import GlobalSearch from "../tools/GlobalSearch";
 import Link from "next/link";
 import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
+import SignUpSoon from "@/components/elements/button/SignUpSoon";
 
 const WebHeader = () => {
   const { theme } = useTheme();
@@ -27,13 +28,16 @@ const WebHeader = () => {
     <header className="border-b">
       <div className="inner-container large">
         <div className="flex h-[100px] items-center gap-[20px] relative justify-between">
-          <CodeDynastyLogo className="text-[20px] md:text-[24px]" />
+          <CodeDynastyLogo className="text-[26px] md:text-[32px]" />
           
           <div className="pos-center hidden xl:block">
             <Menu className="text-[22px] [&_button]:text-[22px] [&_a]:text-[22px] [&_svg]:w-4 [&_svg]:h-4 uppercase font-teko" />
           </div>
           
-          <div className="flex gap-[20px]">
+          <div className="flex items-center gap-[20px]">
+            <div className="hidden md:block">
+              <SignUpSoon />
+            </div>
             <div>
               <Button
                 variant="secondary"

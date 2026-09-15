@@ -18,7 +18,7 @@ const BrandingHeader = ({ maxWidth, onlyDark = false }: Props) => {
         <div className={cn("container", maxWidth)}>
           <div className="flex h-[80px] 2xl:h-[100px] items-center gap-[20px] relative justify-between">
             <div>
-              <CodeDynastyLogo tone={onlyDark ? "onDark" : "auto"} className="text-[20px] md:text-[24px]" />
+              <CodeDynastyLogo tone={onlyDark ? "onDark" : "auto"} className="text-[26px] md:text-[32px]" />
             </div>
             <div className="pos-center hidden xl:block">
               <Menu
