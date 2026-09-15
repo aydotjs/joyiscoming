@@ -61,7 +61,7 @@ const WorkInner = ({ title, description, icon, projects }: Props) => {
             />
           </div>
         </div>
-        <div className="grid gap-12 xl:gap-[68px] ">
+        <div className="grid gap-6 xl:gap-8">
           {projects.map((project) => (
             <WorkCard key={project.data.id} project={project} />
           ))}
