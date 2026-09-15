@@ -1,7 +1,6 @@
 import ServicesHero from "@/components/service/ServicesHero";
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
 import ClientArea from "@/components/clients/ClientArea";
-import ClientSlider from "@/components/clients/ClientSlider";
 import ServiceInnerArea from "@/components/service/ServiceInnerArea";
 import PricingArea from "@/components/pricing/PricingArea";
 import SeoData from "@/components/tools/SeoData";
@@ -11,7 +10,6 @@ import AboutBanner from "@/components/banner/AboutBanner";
 const Services = () => {
   const { data: hero } = getMainPage("/services/main/_index.mdx");
   const { data: brands } = getMainPage("/brands/brands1.mdx");
-  const { data: clients } = getMainPage("/brands/brands3.mdx");
   const services = getAllPages("services/main");
   const { data: aboutBanner } = getMainPage("/banner/about-banner.mdx");
   const { data: pricingData } = getMainPage("/pricings/main-pricing.mdx");
@@ -27,7 +25,6 @@ const Services = () => {
         description={meta?.meta_description}
       />
       <ServicesHero {...hero} />
-      <ClientSlider clients={clients.brands} />
       <ServiceInnerArea
         title={title2}
         description={description2}

@@ -1,6 +1,5 @@
 import WebAbout from "@/components/about/WebAbout";
 import WebBlog from "@/components/blog/web/WebBlog";
-import ClientSlider from "@/components/clients/ClientSlider";
 import WebContact from "@/components/contact/WebContact";
 import WebEnterPrise from "@/components/enterprise/web/WebEnterPrise";
 import WebFaq from "@/components/faq/web/WebFaq";
@@ -18,7 +17,6 @@ import SeoData from "@/components/tools/SeoData";
 import LayoutWrapper from "./layout-wrapper";
 
 const page = () => {
-  const { data: clients } = getMainPage("/brands/brands3.mdx");
   const { data: about } = getMainPage("/about/web/main.mdx");
   const { data: feature } = getMainPage("/features/web-features.mdx");
   const { data: skill } = getMainPage("/skill/web-skill.mdx");
@@ -43,10 +41,6 @@ const page = () => {
         description="CodeDynasty Description"
       />
       <WebHero />
-      <ClientSlider
-        clients={clients.brands}
-        shapeImage="/assets/imgs/shape/img-s-65.png"
-      />
       <WebAbout data={{ ...about }} />
       <WebFeature {...feature} />
       <WebEnterPrise {...enterprise} />
