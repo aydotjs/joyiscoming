@@ -128,12 +128,12 @@
     },
     {
       "id": 3,
-      "title": "Manchester Office",
+      "title": "Contact",
       "children": [
         {
           "isLocation": true,
-          "name": "Manchester, United Kingdom",
-          "path": "https://maps.app.goo.gl/your-location-link"
+          "name": "United Kingdom",
+          "path": "#"
         },
         {
           "name": "+44 07804 468345",
@@ -170,8 +170,13 @@
     "locationData": [
       {
         "id": 1,
-        "city": "Manchester",
-        "address": "Manchester, United Kingdom"
+        "city": "United Kingdom",
+        "address": "+44 07804 468345"
+      },
+      {
+        "id": 2,
+        "city": "Nigeria",
+        "address": "+234 903 643 5534"
       }
     ],
     "navData": [

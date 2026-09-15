@@ -47,7 +47,7 @@ const WebHero = () => {
             <span
               className="has_fade_anim inline-block text-sm uppercase tracking-[0.2em] font-semibold text-text-3 mb-[24px]"
             >
-              Coding bootcamp &amp; development agency &mdash; Manchester
+              Coding academy
             </span>
 
             <h1 className="has_fade_anim text-[52px] sm:text-[68px] md:text-[84px] lg:text-[72px] xl:text-[92px] 2xl:text-[112px] leading-[0.95] font-bold tracking-[-0.02em]">

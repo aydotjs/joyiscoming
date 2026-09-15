@@ -15,7 +15,7 @@ type ContactInfo = {
   info: {
     title: string;
     contact_list: {
-      phone: string;
+      phones: string[];
       email: string;
       address: string;
     };
