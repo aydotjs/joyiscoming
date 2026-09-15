@@ -1,4 +1,3 @@
-import ImageComponent from "@/components/tools/ImageComponent";
 import { TBlogType } from "@/types";
 import Link from "next/link";
 
@@ -9,7 +8,6 @@ const WebBlogCard = ({ data, slug }: TBlogType) => {
     author_name,
     tags,
     published_date,
-    thumb_img,
   } = data;
 
   return (
@@ -19,15 +17,6 @@ const WebBlogCard = ({ data, slug }: TBlogType) => {
           <h2 className="underline text-[24px] xl:text-[28px] 2xl:text-[36px] leading-[.88] text-text-fixed-2 !font-semibold uppercase group-hover:text-text-fixed transition-all duration-500">
             {title}
           </h2>
-          <div className="mt-[28px] xl:mt-[38px] me-[-45px] overflow-hidden">
-            <ImageComponent
-              src={thumb_img}
-              width={365}
-              height={280}
-              alt="thumb-img"
-              className="transition-all duration-500 group-hover:scale-[1.1] w-full"
-            />
-          </div>
           <p className="mt-[20px] text-text-fixed-3 transition-all duration-500 group-hover:text-text-fixed">
             {short_description}
           </p>

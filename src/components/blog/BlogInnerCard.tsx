@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { TBlogType } from "@/types";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
@@ -11,19 +10,10 @@ const BlogInnerCard = ({ data, slug, serialNo }: Props) => {
     return number < 10 ? `0${number}` : number;
   };
 
-  const { title, thumb_img } = data;
+  const { title } = data;
   return (
     <Link href={`/blog/${slug}`}>
       <div className="group">
-        <div>
-          <Image
-            src={thumb_img}
-            alt="blog_thumb"
-            height={400}
-            width={514}
-            className="w-full h-auto"
-          />
-        </div>
         <div className=" pb-[13px] xl:pb-[23px] pt-5 xl:pt-[25px] grid grid-cols-[38px_1fr_auto] xl:grid-cols-[68px_1fr_auto] gap-[10px] transition-all duration-500">
           <span className="text-[18px] text-text-3 group-hover:text-text">
             {formatSerial(serialNo)}

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { TBlogType } from "@/types";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -65,15 +64,6 @@ const BlogDetailsTop = ({ data }: TBlogType) => {
             <p className="mt-[9px]">{monthMap[month]}</p>
           </li>
         </ul>
-      </div>
-      <div className="overflow-hidden">
-        <Image
-          src="/assets/imgs/blog/img-s-26.jpg"
-          alt="blog_thumb"
-          width={1290}
-          height={550}
-          className="w-full"
-        />
       </div>
     </div>
   );

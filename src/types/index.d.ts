@@ -97,8 +97,8 @@ type TBlogType = {
     author_name?: string;
     author_image?: string;
     location?: string;
-    image: string;
-    thumb_img: string;
+    image?: string;
+    thumb_img?: string;
     tags: {
       name: string;
       link: string;
