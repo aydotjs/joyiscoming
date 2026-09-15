@@ -69,6 +69,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        caret: { "0%, 45%": { opacity: "1" }, "50%, 100%": { opacity: "0" } },
         "accordion-down": {
           from: {
             height: "0",
@@ -87,6 +88,7 @@ const config: Config = {
         },
       },
       animation: {
+        caret: "caret 1s steps(1) infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

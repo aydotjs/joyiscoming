@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import ImageComponent from "../tools/ImageComponent";
+import CodeTyper from "./CodeTyper";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
@@ -40,14 +41,16 @@ const WebHero = () => {
             className="pointer-events-none absolute -top-[120px] end-[-10%] h-[520px] w-[520px] rounded-full opacity-[0.18] blur-3xl bg-theme -z-[1] lg:h-[720px] lg:w-[720px] 2xl:end-[-4%]"
           />
 
-          <div className="max-w-[1180px]">
+          <div className="grid gap-y-[48px] gap-x-[60px] xl:gap-x-[80px] lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] items-center">
+            {/* Text column */}
+            <div className="min-w-0">
             <span
               className="has_fade_anim inline-block text-sm uppercase tracking-[0.2em] font-semibold text-text-3 mb-[24px]"
             >
               Coding bootcamp &amp; development agency &mdash; Manchester
             </span>
 
-            <h1 className="has_fade_anim text-[56px] sm:text-[72px] md:text-[96px] xl:text-[120px] 2xl:text-[150px] leading-[0.92] font-bold tracking-[-0.02em]">
+            <h1 className="has_fade_anim text-[52px] sm:text-[68px] md:text-[84px] lg:text-[72px] xl:text-[92px] 2xl:text-[112px] leading-[0.95] font-bold tracking-[-0.02em]">
               We teach code and build{" "}
               <span className="text-theme">Digital Products</span>
             </h1>
@@ -75,6 +78,12 @@ const WebHero = () => {
                   />
                 </Link>
               </div>
+            </div>
+            </div>
+
+            {/* Code editor column */}
+            <div className="min-w-0 has_fade_anim" data-fade-from="right" data-delay="0.3">
+              <CodeTyper className="lg:ms-auto lg:max-w-[560px]" />
             </div>
           </div>
         </div>
