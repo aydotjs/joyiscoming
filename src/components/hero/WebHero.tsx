@@ -19,7 +19,7 @@ const WebHero = () => {
   );
 
   return (
-    <section ref={containerRef}>
+    <section ref={containerRef} className="overflow-x-clip">
       <div className="inner-container large">
         <div className="relative pt-[60px] lg:pt-[90px] 2xl:pt-[120px] pb-[70px] lg:pb-[110px] xl:pb-[130px]">
           {/* Background Shape */}
