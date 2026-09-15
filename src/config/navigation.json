@@ -44,24 +44,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Portfolio",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Our Projects",
-          "path": "/work"
-        },
-        {
-          "id": 2,
-          "name": "Student Projects",
-          "path": "/portfolio/student-work"
-        }
-      ]
-    },
-    {
       "id": 5,
       "name": "Academy",
       "path": "#",
@@ -129,10 +111,6 @@
         {
           "name": "About Us",
           "path": "/about"
-        },
-        {
-          "name": "Our Work",
-          "path": "/work"
         },
         {
           "name": "Success Stories",
@@ -253,10 +231,6 @@
         {
           "name": "About",
           "path": "/about"
-        },
-        {
-          "name": "Portfolio",
-          "path": "/work"
         },
         {
           "name": "Contact",

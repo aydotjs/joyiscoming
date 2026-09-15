@@ -10,7 +10,6 @@ import WebService from "@/components/service/web/WebService";
 import WebSkill from "@/components/skill/web/WebSkill";
 import WebTeam from "@/components/team/web/WebTeam";
 import WebTestimonial from "@/components/testimonial/web/WebTestimonial";
-import WebWork from "@/components/work/web/WebWork";
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
 import BindBtnMoveEffect from "@/components/tools/BindBtnMoveEffect";
 import SeoData from "@/components/tools/SeoData";
@@ -21,7 +20,6 @@ const page = () => {
   const { data: feature } = getMainPage("/features/web-features.mdx");
   const { data: skill } = getMainPage("/skill/web-skill.mdx");
   const { data: enterprise } = getMainPage("/enterprise/web-enterprise.mdx");
-  const works = getAllPages("/works/web");
   const { data: service } = getMainPage("/services/web/_main.mdx");
   const services = getAllPages("/services/web");
   const { data: image } = getMainPage("/image/web-image.mdx");

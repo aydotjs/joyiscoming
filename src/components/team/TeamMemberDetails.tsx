@@ -61,37 +61,6 @@ const TeamMemberDetails = ({
               <div className="has_fade_anim mt-[36px] mb-2 text-text-3">
                 <p dangerouslySetInnerHTML={convertWithBr(description)} />
               </div>
-              <div className="mt-10 has_fade_anim">
-                <span className="text-[18px] mb-[22px] inline-block">
-                  Portfolio :
-                </span>
-                <div className="flex gap-[10px]">
-                  {portfolios?.map((item, index) => (
-                    <Link
-                      key={`team-profile-${index}`}
-                      href={item.link}
-                      target="_blank"
-                      className="text-[14px] py-[7px] px-[14px] border rounded-[30px] inline-block text-text-3 hover:text-inherit"
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-              <div className="mt-[40px] has_fade_anim">
-                <span className="text-[18px] mb-[22px] inline-block">
-                  Follow :
-                </span>
-                <div>
-                  <ul className="flex gap-5">
-                    {socials?.map((social, index) => (
-                      <React.Fragment key={`team-social-${index}`}>
-                        {SocialShare1(social)}
-                      </React.Fragment>
-                    ))}
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
