@@ -37,7 +37,7 @@ const WebEnterPrise = ({ title, technologies }: Props) => {
           </div>
         </div>
         <div className="mt-[34px] xl:mt-[44px] 2xl:mt-[64px]">
-          <div className="flex justify-center flex-wrap md:flex-nowrap md:justify-between">
+          <div className="flex justify-center flex-wrap gap-3 sm:gap-4 lg:gap-6">
             {technologies.map((technology, index) => (
               <WebTechnologyCard key={index} {...technology} />
             ))}

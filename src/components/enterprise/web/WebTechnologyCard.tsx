@@ -11,7 +11,7 @@ type Props = {
 const WebTechnologyCard = ({ title, icon }: Props) => {
   return (
     <div
-      className="expertise-box has_fade_anim w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[300px] xl:h-[300px] border border-border rounded-full flex justify-center items-center flex-col first:ms-0 md:ms-[-100px]"
+      className="expertise-box has_fade_anim w-[150px] h-[150px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] border border-border rounded-full flex justify-center items-center flex-col"
       data-fade-from="right"
     >
       <div className="icon ">
@@ -21,10 +21,10 @@ const WebTechnologyCard = ({ title, icon }: Props) => {
           width={100}
           height={100}
           alt="technology-icon"
-          className="max-h-[50px] lg:max-h-[70px] xl:max-h-[100px] w-auto"
+          className="h-[44px] w-[44px] lg:h-[56px] lg:w-[56px] xl:h-[64px] xl:w-[64px] object-contain"
         />
       </div>
-      <p className="name text-[20px] lg:text-[24px] xl:text-[32px] leading-none mt-[17px] xl:mt-[32px]">
+      <p className="name text-[15px] lg:text-[17px] xl:text-[18px] leading-none mt-[14px] xl:mt-[18px] text-center px-3">
         {title}
       </p>
     </div>

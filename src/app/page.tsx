@@ -8,7 +8,6 @@ import WebImage from "@/components/image/WebImage";
 import WebService from "@/components/service/web/WebService";
 import WebSkill from "@/components/skill/web/WebSkill";
 import WebTeam from "@/components/team/web/WebTeam";
-import WebTestimonial from "@/components/testimonial/web/WebTestimonial";
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
 import BindBtnMoveEffect from "@/components/tools/BindBtnMoveEffect";
 import SeoData from "@/components/tools/SeoData";
@@ -26,7 +25,6 @@ const page = () => {
   const { data: team } = getMainPage("/team/web/_main.mdx");
   const { data: faqsData } = getMainPage("/faqs/web-faqs.mdx");
   const { data: contactBanner } = getMainPage("/banner/web-contact-banner.mdx");
-  const { data: testimonial } = getMainPage("/testimonial/web-testimonial.mdx");
   
   return (
     <LayoutWrapper>

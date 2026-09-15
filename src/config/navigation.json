@@ -53,16 +53,6 @@
           "id": 1,
           "name": "Courses",
           "path": "/academy/courses"
-        },
-        {
-          "id": 2,
-          "name": "Bootcamps",
-          "path": "/academy/bootcamps"
-        },
-        {
-          "id": 3,
-          "name": "Success Stories",
-          "path": "/team"
         }
       ]
     },
@@ -106,10 +96,6 @@
         {
           "name": "About Us",
           "path": "/about"
-        },
-        {
-          "name": "Success Stories",
-          "path": "/team"
         },
         {
           "name": "Career",
