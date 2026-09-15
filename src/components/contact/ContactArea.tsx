@@ -34,15 +34,15 @@ const ContactArea = ({ header, info }: ContactInfo) => {
 
   return (
     <section className="inner-container" ref={containerRef}>
-      <div className="main-section-spacing ">
+      <div className="pt-[50px] xl:pt-[70px] section-spacing-bottom">
         <div className="grid gap-y-5 gap-x-[60px] lg:grid-cols-[1fr_auto]">
           <InnerSectionTitle
             title={header.title}
-            className="large max-w-[850px] 2xl:!text-[120px] !leading-[0.94]"
+            className="max-w-[700px]"
           />
           <p className="has_fade_anim max-w-[300px]">{header.description}</p>
         </div>
-        <div className="grid gap-y-10 gap-x-[60px] mt-[42px] xl:mt-[72px] 2xl:mt-[112px] lg:grid-cols-[1fr_600px] xl:grid-cols-[1fr_740px]">
+        <div className="grid gap-y-10 gap-x-[60px] mt-[36px] xl:mt-[56px] lg:grid-cols-[1fr_600px] xl:grid-cols-[1fr_740px]">
           <ContactInfo {...info} />
           <div className="has_fade_anim" data-delay="0.30">
             <FlexibleForm btnText="Send Message" />
