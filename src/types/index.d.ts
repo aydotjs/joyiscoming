@@ -80,8 +80,8 @@ type TTeamMemberType = {
     post: string;
     social: string;
     social_link: string;
-    avatar: string;
-    image: string;
+    avatar?: string;
+    image?: string;
     description: string;
   };
   slug: string;

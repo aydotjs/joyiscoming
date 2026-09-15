@@ -14,7 +14,6 @@ const TeamPage = () => {
     meta,
     hero,
     total_employee,
-    image,
     team_area,
     counter_area,
     community_area,
@@ -27,7 +26,7 @@ const TeamPage = () => {
         description={meta?.meta_description}
       />
       <TeamHero {...hero} />
-      <TeamImageArea totalEmployee={total_employee} image={image} />
+      <TeamImageArea totalEmployee={total_employee} />
       <TeamArea teamMembers={teamMembers} {...team_area} />
       <TeamCounterArea {...counter_area} />
       <TeamCommunity {...community_area} />

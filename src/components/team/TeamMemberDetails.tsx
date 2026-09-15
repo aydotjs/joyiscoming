@@ -3,16 +3,13 @@
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
 import { convertWithBr } from "@/lib/helper/converter";
 import { useGSAP } from "@gsap/react";
-import Image from "next/image";
 import React, { useRef } from "react";
-import ImageComponent from "../tools/ImageComponent";
 import Link from "next/link";
 import { SocialShare1 } from "../tools/Social";
 
 type Props = {
   name: string;
   post: string;
-  image: string;
   description: string;
   portfolios?: {
     title: string;
@@ -27,7 +24,6 @@ type Props = {
 const TeamMemberDetails = ({
   name,
   post,
-  image,
   description,
   portfolios,
   socials,
@@ -44,23 +40,7 @@ const TeamMemberDetails = ({
   return (
     <section className="container2" ref={containerRef}>
       <div className="pt-[127px] xl:pt-[147px] 2xl:pt-[217px] section-spacing-bottom">
-        <div className="grid gap-x-[60px] gap-y-10 lg:grid-cols-[500px,1fr] xl:grid-cols-[auto_1fr]">
-          <div
-            className="has_fade_anim inline-block relative sm:pt-[60px] sm:ps-[130px] md:ps-[150px] z-10 max-w-[605px]"
-            data-fade-from="left"
-          >
-            <div className="hidden start-0 sm:block absolute top-0 w-[62%] -z-[1]">
-              <ImageComponent
-                className="h-full w-full"
-                src="/assets/imgs/shape/img-s-86.png"
-                darkSrc="/assets/imgs/shape/img-s-86-dark.png"
-                width={377}
-                height={755}
-                alt="light shape"
-              />
-            </div>
-            <Image src={image} width={456} height={695} alt="thumb-img" />
-          </div>
+        <div className="grid gap-y-10">
           <div className="md:pt-[60px]">
             <div>
               <div>

@@ -44,7 +44,7 @@ const AboutTeam = ({ title, description, teamMembers }: Props) => {
               {firstFourMember.map((profile, index) => (
                 <div
                   key={profile.data.id}
-                  className="odd:md:mt-[70px] has_fade_anim [&_p]:text-text-fixed-3"
+                  className="has_fade_anim [&_p]:text-text-fixed-3"
                   data-fade-from="left"
                   data-delay={(index + 1) * 0.15}
                 >
