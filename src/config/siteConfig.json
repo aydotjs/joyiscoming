@@ -6,13 +6,11 @@
   },
   "site_info": {
     "title": "CodeDynasty",
-    "description": "CodeDynasty is a coding education and digital product development agency. We teach tech and create innovative solutions that transform businesses.",
+    "description": "CodeDynasty is a coding bootcamp and development agency in Manchester. We teach people to code and build software for businesses.",
     "info": "CodeDynasty is a coding bootcamp and development agency based in Manchester, UK",
     "base_url": "",
     "logo": "/assets/imgs/logo/logo.png",
     "logo_light": "/assets/imgs/logo/logo-light.png",
-    "logo_light_2": "/assets/imgs/logo/logo-light-2.png",
-    "logo_tm_light": "/assets/imgs/logo/logo-tm-light.png",
     "logo_width": 125,
     "logo_height": 34,
     "logo_text": "CodeDynasty"
@@ -34,7 +32,7 @@
       "company": "CodeDynasty",
       "link": "https://codedynasty.com/"
     },
-    "ctaText": "Let's Build Something Amazing"
+    "ctaText": "Let's talk"
   },
   "social": [
     {
