@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import CodeDynastyLogo from "@/components/elements/logo/CodeDynastyLogo";
 import { useRef } from "react";
 import siteConfig from "@/config/siteConfig.json";
@@ -48,16 +47,6 @@ const Footer2 = ({ data, TitleclassName }: Props) => {
     <footer className="bg-background-3 overflow-hidden">
       <div className="container2" ref={containerRef}>
         <div className="relative z-10 section-spacing-top">
-          <div className="hidden md:block absolute top-0 start-[calc(100%-235px)] -z-10 w-[350px] xl:w-[550px]">
-            <Image
-              src="/assets/imgs/shape/img-s-33.png"
-              width={550}
-              height={508}
-              alt="shape_1"
-              className="h-auto max-w-full inline-block"
-            />
-          </div>
-
           <div>
             <div>
               <h2
