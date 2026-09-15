@@ -72,22 +72,19 @@ const WebHero = () => {
             {/* Image Column */}
             <div className="has_fade_anim" data-fade-from="right">
               <div className="relative flex justify-center lg:justify-end">
-                <div
-                  className="relative overflow-hidden rounded-[24px] shadow-2xl"
-                  style={{
-                    maxWidth: "500px",
-                  }}
-                >
+                <div className="relative w-full max-w-[500px] aspect-[5/6] overflow-hidden rounded-[24px] shadow-2xl">
                   <ImageComponent
                     src="/assets/imgs/gallery/hero_img_2.jpg"
                     width={500}
                     height={600}
-                    alt="Digital Products"
-                    className="w-full h-auto"
+                    sizes="(max-width: 1023px) 90vw, 500px"
+                    priority
+                    alt="Student writing code on a laptop"
+                    className="w-full h-full object-cover"
                   />
-                  
+
                   {/* Overlay accent */}
-                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-theme/10 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-theme/10 to-transparent pointer-events-none" />
                 </div>
 
                 {/* Decorative element */}

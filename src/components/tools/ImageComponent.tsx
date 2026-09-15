@@ -17,6 +17,7 @@ export default function ImageComponent({
   dataFadeFrom = "",
   dataFadeOffset = "",
   dataDelay = "",
+  sizes = "",
 }) {
   const { mode } = useMode();
 
@@ -24,6 +25,7 @@ export default function ImageComponent({
     <Image
       width={width}
       height={height}
+      {...(sizes ? { sizes } : {})}
       style={{ width: customWidth, height: customHeight }}
       src={mode === "dark" ? (darkSrc ? darkSrc : src) : src}
       className={className}
