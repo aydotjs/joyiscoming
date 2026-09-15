@@ -3,7 +3,6 @@ import { getAllPages } from "@/lib/helper/contentConverter";
 import { getMainPage } from "@/lib/helper/contentConverter";
 import MDXContent from "@/components/tools/MDXContent";
 import ServiceDetails from "@/components/service/ServiceDetails";
-import ClientArea from "@/components/clients/ClientArea";
 import PricingArea from "@/components/pricing/PricingArea";
 import SeoData from "@/components/tools/SeoData";
 import ContactBanner from "@/components/banner/ContactBanner";
@@ -27,7 +26,6 @@ export const generateStaticParams = () => {
 const page = ({ params }: Props) => {
   const services = getAllPages("/services/main");
   const { data: pricingData } = getMainPage("/pricings/main-pricing.mdx");
-  const { data: brands } = getMainPage("/brands/brands1.mdx");
 
   if (!(services && services.length)) {
     notFound();
@@ -52,7 +50,6 @@ const page = ({ params }: Props) => {
       <div className="service-details-inner">
         <MDXContent content={service.content} />
         <ServiceDetailsFaq faqs={faqs} faqTitle={faq_title} />
-        <ClientArea brands={brands.brands} />
         <ContactBanner contactTitle={contactTitle} btn_text={btn_text} />
         <PricingArea {...pricingData.pricing} />
       </div>

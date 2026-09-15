@@ -5,7 +5,6 @@ import AboutTestimonial from "@/components/about/AboutTestimonial";
 import AboutTeam from "@/components/team/AboutTeam";
 import TeamCounterArea from "@/components/team/TeamCounterArea";
 import PricingArea from "@/components/pricing/PricingArea";
-import ClientArea from "@/components/clients/ClientArea";
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
 import SeoData from "@/components/tools/SeoData";
 import ContactBanner from "@/components/banner/ContactBanner";
@@ -21,7 +20,6 @@ const About = () => {
   const teamMembers = getAllPages("/team/main");
   const { data: pricingData } = getMainPage("/pricings/main-pricing.mdx");
   const { data: contactBanner } = getMainPage("/banner/contact-banner.mdx");
-  const { data: brands } = getMainPage("/brands/brands1.mdx");
 
   const { title, hero, counter_area, award_area, team_area, meta } =
     about || {};
@@ -45,7 +43,6 @@ const About = () => {
       <AboutTeam teamMembers={teamMembers} {...team_area} />
       <PricingArea {...pricingData.pricing} />
       <ContactBanner {...contactBanner} />
-      <ClientArea brands={brands.brands} />
     </main>
   );
 };

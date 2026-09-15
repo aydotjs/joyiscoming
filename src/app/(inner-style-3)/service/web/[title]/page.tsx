@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { getAllPages } from "@/lib/helper/contentConverter";
 import { getMainPage } from "@/lib/helper/contentConverter";
 import MDXContent from "@/components/tools/MDXContent";
-import ClientArea from "@/components/clients/ClientArea";
 import SeoData from "@/components/tools/SeoData";
 import ContactBanner from "@/components/banner/ContactBanner";
 import WebServiceDetails from "@/components/service/web/WebServiceDetails";
@@ -25,7 +24,6 @@ export const generateStaticParams = () => {
 
 const service = ({ params }: Props) => {
   const services = getAllPages("/services/web");
-  const { data: brands } = getMainPage("/brands/brands1.mdx");
 
   if (!(services && services.length)) {
     notFound();
@@ -51,7 +49,6 @@ const service = ({ params }: Props) => {
       <div className="web-service-details inner-container">
         <MDXContent content={service.content} />
         <ContactBanner contactTitle={contactTitle} btn_text={btn_text} />
-        <ClientArea brands={brands.brands} />
       </div>
     </main>
   );

@@ -1,6 +1,5 @@
 import ServicesHero from "@/components/service/ServicesHero";
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
-import ClientArea from "@/components/clients/ClientArea";
 import ServiceInnerArea from "@/components/service/ServiceInnerArea";
 import PricingArea from "@/components/pricing/PricingArea";
 import SeoData from "@/components/tools/SeoData";
@@ -9,7 +8,6 @@ import AboutBanner from "@/components/banner/AboutBanner";
 
 const Services = () => {
   const { data: hero } = getMainPage("/services/main/_index.mdx");
-  const { data: brands } = getMainPage("/brands/brands1.mdx");
   const services = getAllPages("services/main");
   const { data: aboutBanner } = getMainPage("/banner/about-banner.mdx");
   const { data: pricingData } = getMainPage("/pricings/main-pricing.mdx");
@@ -33,7 +31,6 @@ const Services = () => {
       <AboutBanner {...aboutBanner} />
       <PricingArea {...pricingData.pricing} />
       <ContactBanner {...contactBanner} />
-      <ClientArea brands={brands.brands} />
     </main>
   );
 };
